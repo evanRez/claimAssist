@@ -172,7 +172,7 @@ function createLabEls(la) {
   labHeader = document.createElement("h2");
   labHeader.innerText = "Lab & Soil";
   labsEl.appendChild(labHeader);
-  if (ca.length > 0) {
+  if (la.length > 0) {
     la.forEach((el) => {
       labEl = document.createElement("DIV");
       labEl.innerHTML = `
