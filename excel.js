@@ -172,9 +172,10 @@ function createLabEls(la) {
   labHeader = document.createElement("h2");
   labHeader.innerText = "Lab & Soil";
   labsEl.appendChild(labHeader);
-  la.forEach((el) => {
-    labEl = document.createElement("DIV");
-    labEl.innerHTML = `
+  if (ca.length > 0) {
+    la.forEach((el) => {
+      labEl = document.createElement("DIV");
+      labEl.innerHTML = `
     <div class="${el[1]}">
     <article class="lab-card mb-3 border border-5 rounded-3 py-1 my-1 pl-1">
     <div class="row mb-3">
@@ -187,8 +188,14 @@ function createLabEls(la) {
         </article>
         </div>
 `;
+      labsEl.appendChild(labEl);
+    });
+  } else {
+    labEl = document.createElement("DIV");
+    labEl.innerHTML = `
+    <div>No Lab or Soil items were detected</div>`;
     labsEl.appendChild(labEl);
-  });
+  }
 }
 
 /*add calculation factors and apply the LSCA & Mark up rate as needed, Both calculation could late be combined into a single function */
