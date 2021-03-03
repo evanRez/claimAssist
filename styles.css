@@ -1,0 +1,54 @@
+.hidden {
+  display: none;
+}
+
+.lab-card {
+  background-color: white;
+}
+
+.logo {
+  height: 80px;
+  width: 160px;
+  background-color: white;
+  margin-right: 1rem;
+}
+
+body {
+  background-color: #fff;
+  color: #092940;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+#titleDiv {
+  background-color: #29689e;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #fff;
+  line-height: 120% !important;
+  font-weight: bold;
+  font-size: 250% !important;
+  text-transform: none;
+  font-family: "Cabin", sans-serif;
+  padding: 0 0 0 0;
+  margin: 21px 0 29px 0;
+  overflow: hidden;
+  letter-spacing: 0.8px;
+  display: inline;
+  align-content: center;
+}
+
+.subbut {
+  background-color: #29689e;
+  color: #fff;
+  border: none;
+}
+
+.instructions {
+  color: #4b4b4b;
+}
